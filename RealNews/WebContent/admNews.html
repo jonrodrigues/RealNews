@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Editar Noticias</title>
+</head>
+<body>
+	<form action="CadastrarNoticia.do" method="post">
+		<h2>Cadastrar Notícias</h2>
+		
+		<label>Titulo:</label>
+		<input name="titulo" type="text" style="margin-left:25px"> <br><br>
+		<label>Texto:</label> 
+		<textarea name="cadtexto" id="cadtexto" rows="3" cols="58" style="margin-left:27px"> </textarea><br><br>
+		<label>Descrição:</label> 
+		<textarea name="caddescricao" id="caddesc" rows="3" cols="58" style="margin-left:3px"> </textarea><br><br>
+		<input type="submit" value="Enviar">
+	</form>
+<br>
+	<h2>Alterar Notícias</h2>
+	<form method="post" action="AlterarNoticia.do">
+		<label>ID:</label> 
+		<input name="id" type="number" style="margin-left:46px"> <br><br>
+		<label>Titulo:</label>
+		<input name="titulo" type="text"style="margin-left:25px" > <br><br>
+		<label>Texto:</label> 
+		<textarea name="alttexto" id="alttexto" rows="3" cols="58" style="margin-left:27px"> </textarea><br><br>
+		<label>Descrição:</label> 
+		<textarea name="altdescricao" id="altdescricao" rows="3" cols="58" style="margin-left:3px"> </textarea><br><br>
+		<button type="submit">Alterar</button>
+	</form>
+	<br>
+	<h2>Excluir Notícia</h2>
+	<form action="ExcluirNoticia.do" method="get">
+		<label> ID:</label> 
+		<input name="idNoticia" type="number" style="margin-left:46px"/>
+		<button type="submit">Excluir</button>
+	</form>
+	
+	<br>
+	<br>
+	<form action="ListarNoticia.do" method="post">
+		<button type="submit">Listar Todos</button>
+		<button type="reset">Limpar Todos os Campos</button>
+	</form>
+</body>
+</html>
